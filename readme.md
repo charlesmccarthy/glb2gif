@@ -14,10 +14,10 @@ This tool allows you to convert 3D GLB (GL Transmission Format Binary) files int
 
 Here are some examples of GIFs created with this tool:
 
-### Example 1: 3D Character
+### Example 1: 
 ![3D Character Rotation](3d27552.gif)
 
-### Example 2: Minecraft-style Character
+### Example 2:
 ![Minecraft-style Character Rotation](mc2.gif)
 
 ## Installation
