@@ -10,6 +10,16 @@ This tool allows you to convert 3D GLB (GL Transmission Format Binary) files int
 - Works on headless servers (like EC2 instances)
 - Smooth, constant rotation speed
 
+## Examples
+
+Here are some examples of GIFs created with this tool:
+
+### Example 1: 3D Character
+![3D Character Rotation](3d27552.gif)
+
+### Example 2: Minecraft-style Character
+![Minecraft-style Character Rotation](mc2.gif)
+
 ## Installation
 
 1. Clone this repository:
@@ -45,7 +55,7 @@ Options:
 - `--num_frames`: Number of frames in the output GIF (default: 60)
 - `--resolution`: Width and height of the output GIF (default: 800 600)
 
-## Examples
+## Example Commands
 
 Convert a character model to a GIF:
 ```
