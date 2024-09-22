@@ -5,6 +5,7 @@ import math
 from PIL import Image
 import io
 import argparse
+from xvfbwrapper import Xvfb
 
 parser = argparse.ArgumentParser(description='Create a rotating GIF from a GLB file')
 parser.add_argument('glb_file', type=str, help='The path to the GLB file')
@@ -87,7 +88,9 @@ def create_rotating_gif(glb_file, output_file, num_frames=60, resolution=(800, 6
     
     print(f"GIF saved as {output_file}")
 
-# Usage
-glb_file = args.glb_file
-output_file = args.output_file
-create_rotating_gif(glb_file, output_file, num_frames=args.num_frames, resolution=tuple(args.resolution))
+# Wrap the main function in a virtual framebuffer context
+with Xvfb() as xvfb:
+    # Usage
+    glb_file = args.glb_file
+    output_file = args.output_file
+    create_rotating_gif(glb_file, output_file, num_frames=args.num_frames, resolution=tuple(args.resolution))
