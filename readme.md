@@ -14,7 +14,7 @@ This tool allows you to convert 3D GLB (GL Transmission Format Binary) files int
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/glb-to-gif-converter.git
+   git clone https://github.com/charlesmccarthy/glb-to-gif-converter.git
    cd glb-to-gif-converter
    ```
 
